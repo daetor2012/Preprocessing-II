@@ -8,6 +8,7 @@ html {
 
 html, body {
   font-family: 'Roboto', sans-serif;
+    max-width: 100%;
 }
 
 h1, h2, h3, h4, h5 {
@@ -43,4 +44,48 @@ img {
   max-width: 800px;
   width: 100%;
   margin: 0 auto;
+    
+}
+.btn {
+    .buttons(teal; white; 10px; 200px; 40px; 18px; center; middle; table-cell);
+}
+@media (max-width: 500px) {
+    html, body {
+        max-width: 100%;
+        overflow-x: hidden;
+    }
+    .container {
+        max-width: 500px;
+    }
+    body img {
+        display: block;
+        width: 100%;
+    }
+    header nav span {
+        display: block;
+        margin-left: 22%;
+        margin-bottom: 3%;
+    }
+    header nav a {
+        margin-left: 10%;
+    }
+    .content-pick {
+        display: flex;
+        flex-direction: column;
+        width: 115rem;
+    }
+    div .group1 {
+        margin-left: 6%;
+    }
+    .btn {
+        width: 30rem;
+    }
+    .content-section {
+        display: flex;
+        flex-direction: column;
+        
+    }
+    .img-content {
+        margin-left: 20%;
+    }
 }
